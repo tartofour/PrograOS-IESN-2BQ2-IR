@@ -14,6 +14,7 @@ do
         echo "Bienvenue administrateur."
     else
         echo "Erreur."
+        exit 1
     fi
     shift
 done
