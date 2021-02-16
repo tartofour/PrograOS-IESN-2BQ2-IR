@@ -7,14 +7,21 @@ fi
 
 while [ -n "$1" ]
 do
-    if [ $1 == "robert" ]; then
+    case $1 in
+
+    robert)
         echo "Bonjour Robert."
-    elif [ $1 == "test" ]; then
+        ;;
+    test)
         echo "Attention, ceci est un compte de test."
-    elif [ $1 == "root" ]; then
+        ;;
+    root)
         echo "Bienvenue administrateur."
-    else
+        ;;
+    *)
         echo "Erreur."
-    fi
+        exit 1
+    esac
+
     shift
 done
