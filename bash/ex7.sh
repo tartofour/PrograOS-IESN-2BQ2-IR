@@ -5,7 +5,7 @@ delim=','
 filename=${@: -1}
 
 display_help() {
-  echo "UTILISATION : $0 [OPTION]... FICHIER" 
+  echo "UTILISATION : $0 [OPTIONS]... FICHIER" 
   echo "  Crée des comptes utilisateurs via une liste fournie en paramètre."
   echo "FORMAT DU FICHIER : "
   echo "  username,password"
