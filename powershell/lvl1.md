@@ -24,7 +24,8 @@
     CommandType     Name                                	           Version
     -----------     ----                                               --
     Alias           ls -> Get-ChildItem
-    ``````powershell
+    ```
+    ```powershell
     PS C:\Users\tartof> Get-Alias dir
     CommandType     Name                                               Version
     -----------     ----                                               --
