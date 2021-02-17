@@ -33,12 +33,12 @@
 - Utilisez la pour renvoyer le listing du répertoire courant dans une variable.
     
     ```powershell
-    PS C:\Users\tartof> $var=Get-ChildItem
+    PS C:\Users\tartof> $var=ls
     ```
 - Affichez ensuite le contenu de cette variable
     
     ```powershell
-    PS C:\Users\tartof> Write-Output $var
+    PS C:\Users\tartof> echo $var
     
     Directory: C:\Users\tartof
     
@@ -62,7 +62,7 @@
 - Affichez maintenant uniquement la première ligne de la variable
     
     ```powershell
-    PS C:\Users\tartof> Write-Output $var[0]
+    PS C:\Users\tartof> echo $var[0]
     
     Directory: C:\Users\tartof
      
