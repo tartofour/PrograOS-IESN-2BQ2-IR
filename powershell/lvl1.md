@@ -130,10 +130,12 @@
     ```powershell
     PS C:\Users\tartof> $var[0].Attributes
     Directory
-    ``````powershell
+    ```
+    ```powershell
     PS C:\Users\tartof> $var[0].LastWriteTime
     Saturday, January 16, 2021 12:28:52 AM
-    ``````powershell
+    ```
+    ```powershell
     PS C:\Users\tartof> $var[0].Name
     .imibrowser
     ```
@@ -179,7 +181,6 @@
     ```powershell
     PS C:\Users\tartof\Desktop> $process=Get-Process | Where-Object {$_.Name -match "notepad"}
     PS C:\Users\tartof\Desktop> $process.Kill()
-    
     ```
 
 ## Exercice 5
