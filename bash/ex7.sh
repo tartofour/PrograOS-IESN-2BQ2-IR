@@ -45,5 +45,4 @@ fi
 
 while IFS=$delim read username password; do 
     useradd $username -p $password -d /home/$username -m 
-
 done < $filename

@@ -6,6 +6,6 @@ fi
 
 file=$1
 
-if test -e "$file"; then
+if [ -e "$file" ]; then
     echo "Le fichier $file existe"
 fi
