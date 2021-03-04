@@ -35,7 +35,7 @@ done
 
 if [ "$UID" -ne "$root_uid" ]; then
   echo "Les droits root sont nécessaires pour exécuter ce script."
-  exit 87
+  exit 1
 fi
 
 if [ ! -e $filename ]; then
