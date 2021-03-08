@@ -188,12 +188,15 @@
 - Sur base d'un fichier texte contenant une liste de noms, créez des répertoires associés
     
     ```powershell
-    PS C:\Users\tartof\Desktop> $var = Get-Content "noms.txt"
-    PS C:\Users\tartof\Desktop> New-Item -Name $var[0] -ItemType "directory"
-    
-    Directory: C:\Users\tartof\Desktop
-    
-    Mode                 LastWriteTime         Length Name
-    ----                 -------------         ------ ----
-    d-----         2/17/2021   2:08 PM                Arnaud
+    PS C:\Users\tartof> Get-Content "noms.txt" | % {New-Item -Name $_ -ItemType "directory"}
+     
+        Directory: C:\Users\tartof
+     
+    Mode                 LastWriteTime         Length Name                                            
+    ----                 -------------         ------ ----                                            
+    d-----          3/8/2021   2:41 PM                Arnaud                                          
+    d-----          3/8/2021   2:41 PM                Thomas                                          
+    d-----          3/8/2021   2:41 PM                Antoine                                         
+    d-----          3/8/2021   2:41 PM                Alexandre                                       
+    d-----          3/8/2021   2:41 PM                Bryan 
     ```

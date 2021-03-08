@@ -22,7 +22,7 @@ while getopts "hos:" opt; do
       exit 0
       ;;  
     o)  
-      echo "???" 
+      delim=';'
       ;;  
     s)  
       delim=$OPTARG
@@ -44,5 +44,6 @@ if [ ! -e $filename ]; then
 fi
 
 while IFS=$delim read username password; do 
-    useradd $username -p $password -d /home/$username -m 
+    encrypted_passwd=$(openssl passwd $password) 
+    useradd $username -p $encrypted_passwd -d /home/$username -m 
 done < $filename
